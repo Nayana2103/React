@@ -27,7 +27,7 @@ const Navbar = () => {
         <img onClick={()=>setshowMobileMenu(true)} src={assets.menu_icon} className='md:hidden w-7 cursor-pointer'alt=""/>
       </div>
       {/*----mobile-menu---*/}
-      <div className={`md:hidden ${showMobileMenu ? 'fixed w-full' : 'h-0 w-0'} right-0 top-0 bottom-0 overflow-hidden bg-white transition-all`}>
+<     div className={`md:hidden ${showMobileMenu ? 'fixed w-full h-screen' : 'hidden'} right-0 top-0 bg-white transition-all`}>
         <div className='flex justify-end p-6 cursor-pointer'>
           <img onClick={()=>setshowMobileMenu(false)} src={assets.cross_icon} className='' alt=""/>
         </div>
